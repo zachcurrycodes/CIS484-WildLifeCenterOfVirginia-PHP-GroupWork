@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Streamlined - Contact Management/CRM Template</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" media="screen" href="css/style.css" />
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="dashboard.html">Streamlined</a>
+                    </div>
+    
+                  
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul id="main-nav" class="nav navbar-nav">
+                            <li class="action">
+                                <button class="btn btn-primary navbar-btn" data-toggle="popover" data-title="Add new contact" data-placement="bottom" data-content='                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                First Name<br />
+                                                <input class="form-control" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                Last Name<br />
+                                                <input class="form-control" type="text" /><br />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                Company<br />
+                                                <input class="form-control" type="text" />
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <button class="btn btn-primary" type="button">Add contact</button>
+                                        <button class="btn btn-default popover-close" type="button">Cancel</button>
+                                    </form>
+'><i class="fa fa-plus-circle"></i> New Contact</button>
+                            </li>
+                            <li class="action">
+                                <button class="btn btn-primary navbar-btn" data-toggle="popover" data-title="Add new contact" data-placement="bottom" data-content='                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <input class="form-control" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                When it&#39;s due?<br />
+                                                <input class="form-control" type="date" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                What category?<br/>
+                                                <select class="form-control"><option>None</option></select>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <button class="btn btn-primary" type="button">Add task</button>
+                                        <button class="btn btn-default popover-close" type="button">Cancel</button>
+                                    </form>
+'><i class="fa fa-plus-circle"></i> New Task</button>
+                            </li>
+                            <li class="active"><a href="dashboard.html">Dashboard</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="calendar.html">Calendar</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administrator <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Account</a></li>
+                                    <li><a href="#">Users</a></li>
+                                    <li><a href="#">Groups</a></li>
+                                    <li><a href="#">Sign out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right">
+                            <div class="form-group">
+                                <input type="text" class="form-control search" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <!-- Sidebar -->
+    
+                    <aside class="col-md-3 no-padding">
+    
+                        <nav class="global">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="dashboard.html"><i class="fa fa-home"></i> Overview</a></li>
+                                <li><a href="activity.html"><i class="fa fa-heartbeat"></i> Latest Activity</a></li>
+                                <li><a href="contacts.html"><i class="fa fa-book"></i>  Contacts <span class="badge pull-right">2</span></a></li>
+                                <li class="active"><a href="tasks.html"><i class="fa fa-tasks"></i> Tasks <span class="badge bg-warning pull-right">1</span></a></li>
+                                <li><a href="notes.html"><i class="fa fa-file-text"></i> Notes</a></li>
+                            </ul>
+                        </nav>
+    
+                        <nav class="subnav recent">
+                            <h4>Recent Contacts</h4>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li>
+                                    <a class="contact" href="profile.html" data-toggle="popover" data-trigger="hover" title="Profile Summary" data-content='<span class="avatar">
+                                        </span>
+                                        <p>John Doe<br>
+                                        <small class="text-muted">Some Company LTD</small></p>
+                                        <address>123 Some Street, LA</address>
+'><h5>John Doe</h5><h6>Some Company LTD</h6></a>
+                                </li>
+                                <li>
+                                    <a class="contact" href="profile.html" data-toggle="popover" data-trigger="hover" title="Profile Summary" data-content='<span class="avatar">
+                                        </span>
+                                        <p>Jane Roe<br>
+                                        <small class="text-muted">Some Company LTD</small></p>
+                                        <address>123 Some Street, LA</address>
+'><h5>Jane Roe</h5><h6>Other Company Inc.</h6></a>
+                                </li>
+                            </ul>
+                        </nav>
+    
+                        <nav class="subnav">
+                            <h4>Style Templates</h4>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li><a href="layouts.html">Layouts</a></li>
+                                <li><a href="styles.html">Styles</a></li>
+                                <li><a href="forms.html">Forms</a></li>
+                                <li><a href="tables.html">Tables</a></li>
+                            </ul>
+                        </nav>
+                    </aside>
+
+                    <!-- Sidebar End -->
+                    
+    
+                    <!-- Main Section -->
+    
+                    <section class="col-md-9 no-padding">
+                        <div class="main-section">
+                        
+                            <div class="container-fluid no-padding">
+                                <div class="col-md-7 no-padding">
+                                    <div class="main-content panel panel-default no-margin">
+                                        <header class="panel-heading clearfix">
+
+                                            <div class="btn-group pull-right">
+                                                <a href="calendar.html" class="btn btn-default" data-toggle="tooltip" title="View the Task Calendar"><i class="fa fa-calendar"></i></a></li>
+                                                <a href="documentation/index.html" class="btn btn-default" rel="#overlay"><i class="fa fa-question-circle"></i></a></li>
+                                            </div>
+                                            <div class="view-switcher">
+                                                <h2>All Tasks <a href="#">&darr;</a></h2>
+                                                <ul>
+                                                    <li><a href="#">All Tasks</a></li>
+                                                    <li><a href="#">All Tasks Today</a></li>
+                                                    <li><a href="#">All Tasks Tomorrow</a></li>
+                                                    <li class="separator"></li>
+                                                    <li>Recently done...</li>
+                                                    <li class="separator"></li>
+                                                    <li><a href="#">Yesterday</a></li>
+                                                    <li><a href="#">Last Week</a></li>
+                                                </ul>
+                                            </div>
+                                        </header>
+
+                                        <section class="panel-body">
+                                            <ul class="listing list-view">
+                                                <li class="tick">
+                                                    <a class="more" href="taskdetails.html">&raquo;</a>
+                                                    <span class="timestamp">Dec 28, 2010</span>
+                                                    <a href="#">Today</a>
+                                                    <p>Cras egestas vestibulum nisl, nec eleifend nunc pulvinar non.</p>
+                                                </li>
+                                                <li class="calendar">
+                                                    <a class="more" href="taskdetails.html">&raquo;</a>
+                                                    <span class="timestamp">Dec 29, 2010</span>
+                                                    <a href="#">Tomorrow</a>
+                                                    <p>Cras egestas vestibulum nisl, nec eleifend nunc pulvinar non.</p>
+                                                </li>
+                                                <li class="calendar">
+                                                    <a class="more" href="taskdetails.html">&raquo;</a>
+                                                    <span class="timestamp">January 6, 2010</span>
+                                                    <a href="#">Next Week</a>
+                                                    <p>Cras egestas vestibulum nisl, nec eleifend nunc pulvinar non.</p>
+                                                </li>
+                                                <li class="calendar">
+                                                    <a class="more" href="taskdetails.html">&raquo;</a>
+                                                    <span class="timestamp">January 28, 2010</span>
+                                                    <a href="#">Next Month</a>
+                                                    <p>Cras egestas vestibulum nisl, nec eleifend nunc pulvinar non.</p>
+                                                </li>
+                                            </ul>
+                                            <ul class="pagination">
+                                                <li><a href="#">&laquo;</a></li>
+                                                <li class="active"><a href="#">1</a></li>
+                                                <li><a href="#">2</a></li>
+                                                <li><a href="#">3</a></li>
+                                                <li><a href="#">&raquo;</a></li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+
+                                <div class="preview-pane col-md-5">
+                                    <div class="content">
+                                        <h3>Preview Pane</h3>
+                                        <p>This is the preview pane. Click on the more button on an item to view more information.</p>
+                                        <div class="message info">
+                                            <h3>Helpful Tips</h3>
+                                            <img src="images/lightbulb_32.png" class="fl" />
+                                            <p>Phasellus at sapien eget sapien mattis porttitor. Donec ultricies turpis pulvinar enim convallis egestas. Pellentesque egestas luctus mattis. Nulla eu risus massa, nec blandit lectus. Aliquam vel augue eget ante dapibus rhoncus ac quis risus.</p>
+                                        </div>
+                                    </div>
+                                    <div class="preview">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <!-- Main Section End -->
+
+                </div>
+            </div>
+            <div id="push"></div>
+        </section>
+    </div>
+    
+    <footer>
+        <div id="footer-inner" class="container">
+            <div>
+                <span class="pull-right" class="footer" > &copy; 2017. All rights reserved. Owl Team
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- render blocking scripts -->
+
+    <!-- jQuery JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="js/global.js"></script>
+</body>
+</html>
